@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import StasTest from './StasTest';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <li>CSS</li>
           <li>HTML</li>
         </ul>
+        <StasTest></StasTest>
       </header>
     </div>
   );
