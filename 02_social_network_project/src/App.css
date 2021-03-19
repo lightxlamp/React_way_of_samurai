@@ -1,0 +1,34 @@
+.App {
+  display: grid;
+  grid-template-rows: fit-content 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "header header" 
+  "nav main";
+
+  width: 1200px; /* bad, redo. Later =) TODO */
+  margin: 0 auto;
+}
+
+.App-header {
+  grid-area: header; /* assign "pseudonimo" */
+  background-color: aqua;
+}
+.App-header img {
+  width: 190px;
+}
+
+.App-nav {
+  grid-area: nav;
+  background-color: red;
+}
+
+.App-main {
+  grid-area: main;
+  background-color: beige;
+}
+
+.App-main figcaption {
+  display: none;
+}

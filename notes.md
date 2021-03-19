@@ -2,3 +2,4 @@
 comment by Stas: Do not believe author =) Read react style guide. Because just noticed, we have <logo> tag in React sample app
 2) JSX can return only 1 root element 
 3) To use JSX we must import React/ {Component}
+4) JSX: we are not in HTML, so write className not just a "class"
