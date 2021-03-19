@@ -14,9 +14,10 @@
 .App-header {
   grid-area: header; /* assign "pseudonimo" */
   background-color: aqua;
-}
-.App-header img {
-  width: 190px;
+
+  & img {
+    width: 190px;
+  }
 }
 
 .App-nav {
@@ -35,10 +36,10 @@
   "user-wallpaper user-wallpaper" 
   "user-info user-info"
   "user-posts user-posts";
-}
 
-.App-main figcaption {
-  display: none;
+  & figcaption {
+    display: none;
+  }
 }
 
 .user-wallpaper {
