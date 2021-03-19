@@ -26,9 +26,34 @@
 
 .App-main {
   grid-area: main;
-  background-color: beige;
+  background-color: green;
+
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "user-wallpaper user-wallpaper" 
+  "user-info user-info"
+  "user-posts user-posts";
 }
 
 .App-main figcaption {
   display: none;
+}
+
+.user-wallpaper {
+  grid-area: user-wallpaper;
+  background-color: beige;
+  height: 200px;
+  overflow: hidden;
+}
+
+.user-info {
+  grid-area: user-info;
+  background-color: bisque; 
+}
+
+.user-posts {
+  grid-area: user-posts;
+  background-color: burlywood;
 }
