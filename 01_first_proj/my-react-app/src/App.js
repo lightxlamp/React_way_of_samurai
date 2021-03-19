@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import StasTest from './StasTest';
+import ComponentForAutoImportTest from './ComponentForAutoImportTest';
 
 function App() {
   return (
@@ -30,15 +31,24 @@ function App() {
           href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel">
           What is "rel" attribute 
         </a>
-        <ul>
-          <li>JS</li>
-          <li>CSS</li>
-          <li>HTML</li>
-        </ul>
+
+        <List></List>
         <StasTest></StasTest>
+        <ComponentForAutoImportTest></ComponentForAutoImportTest> 
+        {/* Nicuuu. Works with new components. While scanning project (VSC) */}
       </header>
     </div>
   );
+}
+
+function List() {
+  return (
+      <ul>
+        <li>JS</li> 
+        <li>CSS</li>
+        <li>HTML</li>
+      </ul>
+  )
 }
 
 export default App;
