@@ -4,3 +4,7 @@ comment by Stas: Do not believe author =) Read react style guide. Because just n
 3) To use JSX we must import React/ {Component}
 4) JSX: we are not in HTML, so write className not just a "class"
 5) It is so easy to add SCSS... https://www.w3schools.com/react/react_sass.asp
+
+
+### Links 
+1) CSS Evolution: From CSS, SASS, BEM, CSS Modules to Styled Components - https://medium.com/@perezpriego7/css-evolution-from-css-sass-bem-css-modules-to-styled-components-d4c1da3a659b

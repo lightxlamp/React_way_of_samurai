@@ -11,20 +11,6 @@
   margin: 0 auto;
 }
 
-.App-header {
-  grid-area: header; /* assign "pseudonimo" */
-  background-color: aqua;
-
-  & img {
-    width: 190px;
-  }
-}
-
-.App-nav {
-  grid-area: nav;
-  background-color: red;
-}
-
 .App-main {
   grid-area: main;
   background-color: green;
@@ -40,21 +26,4 @@
   & figcaption {
     display: none;
   }
-}
-
-.user-wallpaper {
-  grid-area: user-wallpaper;
-  background-color: beige;
-  height: 200px;
-  overflow: hidden;
-}
-
-.user-info {
-  grid-area: user-info;
-  background-color: bisque; 
-}
-
-.user-posts {
-  grid-area: user-posts;
-  background-color: burlywood;
 }

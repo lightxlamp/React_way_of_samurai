@@ -1,22 +1,26 @@
+import s from './Profile.module.scss'
+import wallpaper from './../img/wallpaper.jpeg'
+import avatar from './../img/avatar.jpeg'
+
 const ProfilePage = () => {
     return (
         <main className="App-main">
 
-        <section className="user-wallpaper">
+        <section className={s.user_wallpaper}>
           <figure>
-            <img className="user-info__wallpaper" src='https://res.cloudinary.com/practicaldev/image/fetch/s--dkFxTwJ2--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/ux6uf870i7esod0sx4sw.png'></img>
+            <img className="user-info__wallpaper" src={wallpaper}></img>
           </figure>
         </section>
 
-        <section className="user-info">
+        <section className={s.user_info}>
           <figure>
-              <img className="user-info__avatar" src="https://lh3.googleusercontent.com/proxy/cv0VyZgXfUWmvOVtUs1mOUrIg5iuAZkbkykAFAH6i8ei80OfT4iOPdAzcjZClk4s3Y81TYayjXKDJvJ7kibqIY5G1Q"
+              <img className={s.user_info__avatar} src={avatar} 
                   alt="Avatar" />
               <figcaption>User avatar</figcaption>
           </figure>
         </section>
 
-        <section className="user-posts">
+        <section className={s.user_posts}>
           <section className="user-posts__new">New Post</section>
           <section className="new-post__list">
             <ul className="list-of-posts">

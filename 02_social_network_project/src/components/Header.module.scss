@@ -1,0 +1,8 @@
+.App__header {
+    grid-area: header; /* assign "pseudonimo" */
+    background-color: aqua;
+
+    & img {
+        width: 190px;
+    }
+}

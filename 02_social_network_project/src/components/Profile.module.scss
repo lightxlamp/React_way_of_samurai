@@ -1,0 +1,20 @@
+.user_wallpaper {
+    grid-area: user-wallpaper;
+    background-color: purple;
+    height: 200px;
+    overflow: hidden;
+}
+  
+.user_info {
+    grid-area: user-info;
+    background-color: aqua; 
+
+    &__avatar {
+        height: 200px;
+    }
+}
+
+.user_posts {
+    grid-area: user-posts;
+    background-color: aquamarine;
+}
