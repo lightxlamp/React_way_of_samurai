@@ -1,19 +1,19 @@
 .App__nav {
-    grid-area: nav;
-    background-color: pink;
-    padding: 0 10px;
+  grid-area: nav;
+  background-color: pink;
+  padding: 0 10px;
 }
 
 .menu {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .item {
-    color: green;
+  color: green;
 }
 
 .item.active {
-    color: gold;
-    font-weight: bold;;
+  color: gold;
+  font-weight: bold;;
 }

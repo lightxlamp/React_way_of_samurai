@@ -8,7 +8,7 @@ const Nav = () => {
                 <li className={s.item}>Messages</li>
                 <li className={s.item}>News</li>
                 {/* two classes */}
-                <li className={`${s.item} ${s.active}`}>Music</li> 
+                <li className={`${s.item} ${s.active}`}>Music</li>
                 <li className={s.item}>Settings</li>
             </ul>
         </nav>
