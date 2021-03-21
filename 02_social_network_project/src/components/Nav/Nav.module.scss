@@ -9,11 +9,12 @@
   padding: 0;
 }
 
-.item {
-  color: green;
+.item a {
+  color: black;
+  text-decoration: none;
 }
 
-.item.active {
-  color: gold;
+.item a.active {
+  color: grey;
   font-weight: bold;;
 }

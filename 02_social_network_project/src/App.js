@@ -10,11 +10,11 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <div className="App">
-            <Header></Header>
-            <Nav></Nav>
-            <div className="App-main">  
-                <Router>
+        <Router>
+            <div className="App">
+                <Header></Header>
+                <Nav></Nav>
+                <div className="App-main">  
                     <Route path="/dialogs" >
                         <Dialogs></Dialogs>
                     </Route>
@@ -30,12 +30,12 @@ function App() {
                     <Route path="/settings">
                         <Settings></Settings>
                     </Route>
-                </Router>
-            </div>
+                </div>
 
-            {/* Have question about 'ProfilePage', should we move only content there. And left content-wrapper here? */}
-            {/* Yes, I was correct XD <3. We did this way later  */}
-        </div>
+                {/* Have question about 'ProfilePage', should we move only content there. And left content-wrapper here? */}
+                {/* Yes, I was correct XD <3. We did this way later  */}
+            </div>
+        </Router>
     );
 }
 
