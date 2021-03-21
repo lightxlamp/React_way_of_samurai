@@ -1,0 +1,17 @@
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item img {
+    height: 40px;   
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.likes {
+    margin-left: 10px;
+    color: darkblue;
+    font-style: italic;
+}
