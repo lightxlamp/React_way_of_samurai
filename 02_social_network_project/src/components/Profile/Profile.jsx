@@ -5,8 +5,7 @@ import MyPosts from './MyPosts/MyPosts';
 
 const ProfilePage = () => {
     return (
-        <main className="App-main">
-
+        <main>
             <section className={s.user_wallpaper}>
                 <figure>
                     <img className="user-info__wallpaper" src={wallpaper}></img>
