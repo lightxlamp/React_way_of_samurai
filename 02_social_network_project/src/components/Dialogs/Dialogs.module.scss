@@ -1,0 +1,27 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+
+    }
+
+    &__item.active {
+        font-weight: bold;
+        color: grey;
+    }
+}
+
+ 
+
+.messages {
+    list-style: none;
+}
+
+.message {
+
+}
