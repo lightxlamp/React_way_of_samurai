@@ -1,6 +1,6 @@
 import s from './Profile.module.scss'
-import wallpaper from './../img/wallpaper.jpeg'
-import avatar from './../img/avatar.jpeg'
+import wallpaper from './../../img/wallpaper.jpeg'
+import avatar from './../../img/avatar.jpeg'
 
 const ProfilePage = () => {
     return (
