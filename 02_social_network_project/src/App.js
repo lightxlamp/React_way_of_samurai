@@ -15,7 +15,7 @@ function App() {
                 <Header></Header>
                 <Nav></Nav>
                 <div className="App-main">  
-                    <Route path="/dialogs" >
+                    <Route path="/dialogs">  
                         <Dialogs></Dialogs>
                     </Route>
                     <Route path="/profile">
@@ -30,6 +30,9 @@ function App() {
                     <Route path="/settings">
                         <Settings></Settings>
                     </Route>
+                    {/* <Route path="/dialogs">  /dialogs/spam/deleted - handled by this Route. as well. To avoid this we use 'exact'
+                        <Dialogs></Dialogs>
+                    </Route> */}
                 </div>
 
                 {/* Have question about 'ProfilePage', should we move only content there. And left content-wrapper here? */}
