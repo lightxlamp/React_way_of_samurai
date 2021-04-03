@@ -8,6 +8,7 @@ comment by Stas: Do not believe author =) Read react style guide. Because just n
 7) Component used this way: <Header name="Stas S." /> has { name: "Stas S." } as a props  
 8) CRA = Create React App in docs
 9) Using usual <a href="/profile">Profile</a> leads to page reloading. So for links we should use <NavLink to="/profile">Profile</NavLink> instead
+10) UI - React. BLL (Business logic layer) - Redux
 
 ### Links 
 1) CSS Evolution: From CSS, SASS, BEM, CSS Modules to Styled Components - https://medium.com/@perezpriego7/css-evolution-from-css-sass-bem-css-modules-to-styled-components-d4c1da3a659b

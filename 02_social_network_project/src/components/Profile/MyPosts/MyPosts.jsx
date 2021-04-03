@@ -2,6 +2,13 @@ import s from './MyPosts.module.scss'
 import Post from './Post/Post';
 
 const MyPosts = () => {
+
+    let postsData = [
+        {id: 1, title: 'React vs Vue: What is the best choice for 2021?', likes: 78},        
+        {id: 2, title: 'Isolated React component development environment with a living style guide', likes: 183},        
+        {id: 3, title: 'GRID: A simple visual cheatsheet for CSS Grid Layout', likes: 1721},        
+    ]
+
     return (
         <section className={s.user_posts}><h3>My posts</h3>
             <section className={s.user_posts__new}>
@@ -10,10 +17,7 @@ const MyPosts = () => {
             </section>
             <section className={s.posts_list}>
                 <ul className={s.list_of_posts}>
-                    <Post title="React vs Vue: What is the best choice for 2021?" likesCount="78"></Post>
-                    <Post title="Isolated React component development environment with a living style guide"
-                          likesCount="183"></Post>
-                    <Post title="GRID: A simple visual cheatsheet for CSS Grid Layout" likesCount="1721"></Post>
+                    <Post title={postsData[0].title} likesCount={postsData[0].likes}></Post>
                 </ul>
             </section>
         </section>
