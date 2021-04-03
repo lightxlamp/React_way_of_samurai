@@ -2,14 +2,12 @@ import { NavLink } from 'react-router-dom'
 import s from './Dialogs.module.scss'
 import PropTypes from 'prop-types';
 
-// TODO add is active 
-//       <li className={s.dialogs__item + ' ' + s.active }><NavLink to="/dialogs/3">James</NavLink></li>
 const DialogItem = (props) => {
     let path = `/dialogs/${props.id}`;
     let isActive = props.state === 'active' ? s.active : '';
     let classes = s.dialogs__item + ' ' + isActive;
     return (
-        <li className={classes}><NavLink to={path}>{props.name} {isActive}</NavLink></li>
+        <li className={classes}><NavLink to={path}>{props.name}</NavLink></li>
     )
 }
 
@@ -32,7 +30,7 @@ const Dialogs = (props) => {
     return (
         <div className={s.dialogs}>
            <ul className={s.dialogs__list}>
-               <DialogItem name="Matteo" id="1"/>
+               <DialogItem name="Matteo" id="1" state/>
                <DialogItem name="Erick" id="2"/>
                <DialogItem name="James" id="3" state={states.active}/>
                <DialogItem name="Anmary" id="4"/>

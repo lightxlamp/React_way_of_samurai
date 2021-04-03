@@ -17,19 +17,4 @@
 .user_posts {
   grid-area: user-posts;
   background-color: aquamarine;
-  padding: 10px;
-
-  &__new {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-  }
-}
-
-.list_of_posts {
-  padding: 0;
-}
-
-.posts_list {
-  margin-top: 20px;
 }
