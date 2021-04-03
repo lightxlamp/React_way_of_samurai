@@ -1,23 +1,51 @@
 import { NavLink } from 'react-router-dom'
 import s from './Dialogs.module.scss'
+import PropTypes from 'prop-types';
+
+// TODO add is active 
+//       <li className={s.dialogs__item + ' ' + s.active }><NavLink to="/dialogs/3">James</NavLink></li>
+const DialogItem = (props) => {
+    let path = `/dialogs/${props.id}`;
+    let isActive = props.state === 'active' ? s.active : '';
+    let classes = s.dialogs__item + ' ' + isActive;
+    return (
+        <li className={classes}><NavLink to={path}>{props.name} {isActive}</NavLink></li>
+    )
+}
+
+const states = {
+    active: 'active',
+    inactive: 'inactive'
+}
+
+DialogItem.propTypes = {
+    variant: PropTypes.oneOf([ 'active', 'inactive']).isRequired
+};
+
+const Message = (props) => {
+    return (
+        <li className={s.message}>{props.content}</li>
+    )
+}
 
 const Dialogs = (props) => {
     return (
         <div className={s.dialogs}>
            <ul className={s.dialogs__list}>
-               <li className={s.dialogs__item}><NavLink to="/dialogs/1">Matteo</NavLink></li>
-               <li className={s.dialogs__item}><NavLink to="/dialogs/2">Erick</NavLink></li>
-               <li className={s.dialogs__item + ' ' + s.active }><NavLink to="/dialogs/3">James</NavLink></li>
-               <li className={s.dialogs__item}><NavLink to="/dialogs/4">Anmary</NavLink></li>
-               <li className={s.dialogs__item}><NavLink to="/dialogs/5">Janet</NavLink></li>
-               <li className={s.dialogs__item}><NavLink to="/dialogs/6">Tilek</NavLink></li>
-               <li className={s.dialogs__item}><NavLink to="/dialogs/7">Mike</NavLink></li>
-               <li className={s.dialogs__item}><NavLink to="/dialogs/8">Samuel</NavLink></li>
+               <DialogItem name="Matteo" id="1"/>
+               <DialogItem name="Erick" id="2"/>
+               <DialogItem name="James" id="3" state={states.active}/>
+               <DialogItem name="Anmary" id="4"/>
+               <DialogItem name="Janet" id="5" />
+               <DialogItem name="Tilek" id="6"/>
+               <DialogItem name="Mike" id="7"/>
+               <DialogItem name="Samuel" id="8"/>
            </ul>
+
            <ul className={s.messages}>
-                <li className={s.message}>Morning</li>
-                <li className={s.message}>Call in 5 mins?</li>
-                <li className={s.message}>OK</li>
+                <Message content="Morning"></Message>
+                <Message content="Call in 5 mins?"></Message>
+                <Message content="OK"></Message>
            </ul>
         </div>
         // Testing two different naming approaches. Will see what code looks better

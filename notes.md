@@ -20,6 +20,11 @@ Added routes using this article. Not a video lesson
 https://developer.mozilla.org/en-US/docs/Web/API/History_API
 https://css-tricks.com/using-the-html5-history-api/
 
+4) Lecture 23. Author missed 'active' class for dialog component. So how we can pass boolean:
+https://spicefactory.co/blog/2019/03/26/how-to-avoid-the-boolean-trap-when-designing-react-components/
+How to Avoid the “Boolean Trap” When Designing React Components =) Let's read
+Read... Interesting. Nice part about Uncle Bob. But this one helped more: https://jaketrent.com/post/expose-enum-props-in-react
+
 ### Errors / Mistakes
 1) Got "Error: Invariant failed: You should not use <NavLink> outside a <Router>". Because I've made decision to wrap
 <Route>'s component with <Router> only. Instead of wrapping all <App> with <Nav> inside it
