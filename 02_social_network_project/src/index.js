@@ -20,9 +20,15 @@ let DialogsData = [
     {name: 'Samuel', id: 8},
 ];
 
+let MessagesData = [
+    {content: 'Morning', id: 1},
+    {content: 'Call in 5 mins?', id: 2},
+    {content: 'OK', id: 3},
+]
+
 ReactDOM.render(
     <React.StrictMode>
-        <App DialogsDate={DialogsData}/>
+        <App DialogsData={DialogsData} MessagesData={MessagesData}/>
     </React.StrictMode>,
     document.getElementById('root')
 );

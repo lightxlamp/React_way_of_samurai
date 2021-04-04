@@ -15,11 +15,16 @@ function App(props) {
                 <Header></Header>
                 <Nav></Nav>
                 <div className="App-main">  
-                    <Route path="/dialogs"><Dialogs DialogsDate={props.DialogsDate}></Dialogs></Route>
+                    <Route path="/dialogs"><Dialogs DialogsData={props.DialogsData} MessagesData={props.MessagesData}></Dialogs></Route>
                     <Route path="/profile"><ProfilePage></ProfilePage></Route>
                     <Route path="/news"><News></News></Route>
                     <Route path="/music"><Music></Music></Route>
                     <Route path="/settings"><Settings></Settings></Route>
+
+                    {/* <Route path="/dialogs" render={
+                        () => <Dialogs DialogsData={props.DialogsData} MessagesData={props.MessagesData} />
+                    }/> */} 
+                    
                     {/* <Route path="/dialogs">  /dialogs/spam/deleted - handled by this Route. as well. To avoid this we use 'exact'
                         <Dialogs></Dialogs>
                     </Route> */}
