@@ -8,28 +8,18 @@ import Settings from './components/Settings/Settings'
 import News from './components/News/News'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-function App() {
+function App(props) {
     return (
         <Router>
             <div className="App">
                 <Header></Header>
                 <Nav></Nav>
                 <div className="App-main">  
-                    <Route path="/dialogs">  
-                        <Dialogs></Dialogs>
-                    </Route>
-                    <Route path="/profile">
-                        <ProfilePage></ProfilePage>
-                    </Route>
-                    <Route path="/news">
-                        <News></News>
-                    </Route>
-                    <Route path="/music">
-                        <Music></Music>
-                    </Route>
-                    <Route path="/settings">
-                        <Settings></Settings>
-                    </Route>
+                    <Route path="/dialogs"><Dialogs DialogsDate={props.DialogsDate}></Dialogs></Route>
+                    <Route path="/profile"><ProfilePage></ProfilePage></Route>
+                    <Route path="/news"><News></News></Route>
+                    <Route path="/music"><Music></Music></Route>
+                    <Route path="/settings"><Settings></Settings></Route>
                     {/* <Route path="/dialogs">  /dialogs/spam/deleted - handled by this Route. as well. To avoid this we use 'exact'
                         <Dialogs></Dialogs>
                     </Route> */}
