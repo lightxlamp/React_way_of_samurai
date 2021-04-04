@@ -1,29 +1,10 @@
-import { NavLink } from 'react-router-dom'
 import s from './Dialogs.module.scss'
-import PropTypes from 'prop-types';
-
-const DialogItem = (props) => {
-    let path = `/dialogs/${props.id}`;
-    let isActive = props.state === 'active' ? s.active : '';
-    let classes = s.dialogs__item + ' ' + isActive;
-    return (
-        <li className={classes}><NavLink to={path}>{props.name}</NavLink></li>
-    )
-}
+import DialogItem from './DialogItem/DialogItem'
+import Message from './Message/Message'
 
 const states = {
     active: 'active',
     inactive: 'inactive'
-}
-
-DialogItem.propTypes = {
-    variant: PropTypes.oneOf([ 'active', 'inactive']).isRequired
-};
-
-const Message = (props) => {
-    return (
-        <li className={s.message}>{props.content}</li>
-    )
 }
 
 let DialogsData = [
