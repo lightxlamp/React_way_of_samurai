@@ -26,9 +26,15 @@ let MessagesData = [
     {content: 'OK', id: 3},
 ]
 
+let PostsData = [
+    {id: 1, title: 'React vs Vue: What is the best choice for 2021?', likes: 78},        
+    {id: 2, title: 'Isolated React component development environment with a living style guide', likes: 183},        
+    {id: 3, title: 'GRID: A simple visual cheatsheet for CSS Grid Layout', likes: 1721},        
+]
+
 ReactDOM.render(
     <React.StrictMode>
-        <App DialogsData={DialogsData} MessagesData={MessagesData}/>
+        <App DialogsData={DialogsData} MessagesData={MessagesData} PostsData={PostsData}/>
     </React.StrictMode>,
     document.getElementById('root')
 );
