@@ -9,6 +9,10 @@ const MyPosts = () => {
         {id: 3, title: 'GRID: A simple visual cheatsheet for CSS Grid Layout', likes: 1721},        
     ]
 
+    let postsList = postsData.map((post) => {
+       return <Post title={post.title} likesCount={post.likes}></Post>; 
+    })
+
     return (
         <section className={s.user_posts}><h3>My posts</h3>
             <section className={s.user_posts__new}>
@@ -17,7 +21,7 @@ const MyPosts = () => {
             </section>
             <section className={s.posts_list}>
                 <ul className={s.list_of_posts}>
-                    <Post title={postsData[0].title} likesCount={postsData[0].likes}></Post>
+                    {postsList}
                 </ul>
             </section>
         </section>
