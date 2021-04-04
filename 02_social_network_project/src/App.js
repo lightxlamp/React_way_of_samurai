@@ -15,8 +15,8 @@ function App(props) {
                 <Header></Header>
                 <Nav></Nav>
                 <div className="App-main">  
-                    <Route path="/dialogs"><Dialogs DialogsData={props.AppState.dialogs} MessagesData={props.AppState.messages}></Dialogs></Route>
-                    <Route path="/profile"><ProfilePage PostsData={props.AppState.posts}></ProfilePage></Route>
+                    <Route path="/dialogs"><Dialogs DialogsData={props.AppState.messagesPage.dialogs} MessagesData={props.AppState.messagesPage.messages}></Dialogs></Route>
+                    <Route path="/profile"><ProfilePage PostsData={props.AppState.profilePage.posts}></ProfilePage></Route>
                     <Route path="/news"><News></News></Route>
                     <Route path="/music"><Music></Music></Route>
                     <Route path="/settings"><Settings></Settings></Route>
