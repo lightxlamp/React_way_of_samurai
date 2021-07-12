@@ -10,7 +10,7 @@ const MyPosts = (props) => {
         <section className={s.user_posts}><h3>My posts</h3>
             <section className={s.user_posts__new}>
                 <textarea></textarea>
-                <button>Add post</button>
+                <button onClick={() => {alert('1')}}>Add post</button>
             </section>
             <section className={s.posts_list}>
                 <ul className={s.list_of_posts}>

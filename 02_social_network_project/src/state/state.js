@@ -13,7 +13,7 @@ let state = {
             {id: 3, title: 'GRID: A simple visual cheatsheet for CSS Grid Layout', likes: 1721}, 
         ]
     },
-    messagesPage: {
+    dialogsPage: {
         messages: [
             {content: 'Morning', id: 1},
             {content: 'Call in 5 mins?', id: 2},
